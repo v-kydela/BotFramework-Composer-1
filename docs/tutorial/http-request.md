@@ -6,7 +6,7 @@ The http request action is found under the `Access external resources >` menu in
 
 1. Select `Send an HTTP request` to add a the step to your flow.
 
-   ![](./assets/03/http-step.png)
+   ![](../media/tutorial-weatherbot/03/http-step.png)
 
 2. In the properties editor,
 
@@ -20,7 +20,7 @@ The http request action is found under the `Access external resources >` menu in
 
       `dialog.api_response`
 
-   ![](./assets/03/http-props.png)
+   ![](../media/tutorial-weatherbot/03/http-props.png)
 
    This will cause the bot to make an HTTP request to the url specified. The reference to `{user.zipcode}` will be replaced by a live value from the bot's memory.
 
@@ -43,7 +43,7 @@ The http request action is found under the `Access external resources >` menu in
 
       `dialog.api_response.content`
 
-   ![](./assets/03/set-property-condition.png)
+   ![](../media/tutorial-weatherbot/03/set-property-condition.png)
 
 6. Still in the `true` branch, use the "+" button, then select `Send a response`
 
@@ -51,7 +51,7 @@ The http request action is found under the `Access external resources >` menu in
    
       `The weather is {dialog.weather.weather} and the temp is {dialog.weather.temp}&deg;`
 
-   ![](./assets/03/ifelse.png)
+   ![](../media/tutorial-weatherbot/03/ifelse.png)
 
 7. Now, in the `false` branch, use the "+" button, then select `Send a response`
 
@@ -65,18 +65,18 @@ The http request action is found under the `Access external resources >` menu in
 
       `user.zipcode`
 
-   ![](./assets/03/ifelse2.png)
+   ![](../media/tutorial-weatherbot/03/ifelse2.png)
 
 
 ## Test in Emulator
 
 1. Restart the bot again, and open it in emulator.
 
-   ![](./assets/02/restart-bot.gif)
+   ![](../media/tutorial-weatherbot/03/restart-bot.gif)
 
 2. After the greeting, send `weather` to the bot. The bot will prompt you for a zipcode. Give it your home zipcode, and seconds later, you should see the current weather conditions!
 
-   ![](./assets/03/basic-weather.gif)
+   ![](../media/tutorial-weatherbot/03/basic-weather.gif)
 
    If you ask for the weather again, notice that the bot doesn't prompt for a zipcode the second time. This is because `user.zipcode` is already set. Had we checked `always prompt,` the bot would ask each time.
 
