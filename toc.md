@@ -9,11 +9,10 @@
 1. [Create a bot](./docs/tutorial/bot-tutorial-introduction.md)
 2. [Add a dialog](./docs/tutorial/bot-tutorial-add-dialog.md)
 3. [Get weather report](./docs/tutorial/bot-tutorial-get-weather.md)
-4. [Add a HTTP request](./docs/tutorial/http-request.md)
-5. [Add help and cancel commands](./docs/tutorial/bot-tutorial-add-help.md)
-6. [Add Language Generation](./docs/tutorial/bot-tutorial-lg.md)
-7. [Use cards](./docs/tutorial/bot-tutorial-cards.md)
-8. [Add LUIS](./docs/tutorial/bot-tutorial-luis.md)
+4. [Add help and cancel commands](./docs/tutorial/bot-tutorial-add-help.md)
+5. [Add Language Generation](./docs/tutorial/bot-tutorial-lg.md)
+6. [Use cards](./docs/tutorial/bot-tutorial-cards.md)
+7. [Add LUIS](./docs/tutorial/bot-tutorial-luis.md)
 
 ### Concepts 
 - [Dialogs](./docs/concept-dialog.md)
